@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.43">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Bobby Coleman">
+<meta name="dcterms.date" content="2025-04-07">
+
+<title>Practicing Joining With Ed Dept. Data – Bobby Coleman’s Site</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-df09ee7639194c170e351a33ef60904b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Bobby Coleman’s Site</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Practicing Joining With Ed Dept. Data</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">code</div>
+                <div class="quarto-category">analysis</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Bobby Coleman </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">April 7, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<p>In this assignment, we used Nebraska Department of Education data to practice joining. Like all projects, I started by loading the library and data.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>scores <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"NSCAS_ELA_Proficient_20232024.csv"</span>) <span class="sc">|&gt;</span> <span class="fu">clean_names</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>This dataset is pretty big and to join it, I need to filter it so I am only left with the columns that I wanted. After doing this, I created the new dataset readingdistricts.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>readingdistricts <span class="ot">&lt;-</span> scores <span class="sc">|&gt;</span> </span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(subgroup_type <span class="sc">==</span> <span class="st">"ALL STUDENTS"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(level <span class="sc">==</span> <span class="st">"DI"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(grade <span class="sc">==</span> <span class="st">"8"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(average_scale_score <span class="sc">!=</span> <span class="st">"*"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(level, school_year, county, district, name, subject, grade, average_scale_score)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>I then loaded data about student discipline and used filter to get the same columns as I have in the above dataset.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>discipline <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"StudentDiscipline_20232024.csv"</span>) <span class="sc">|&gt;</span> <span class="fu">clean_names</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>districtdiscipline <span class="ot">&lt;-</span> discipline <span class="sc">|&gt;</span> </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(subgroup_description <span class="sc">==</span> <span class="st">"All Students"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(level <span class="sc">==</span> <span class="st">"DI"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(students_disciplined_count <span class="sc">!=</span> <span class="st">"*"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>   <span class="fu">select</span>(level, school_year, county, district, name, total_student_population_count, students_disciplined_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Before joining the two datasets districtdiscipline has 241 rows and readingdistrict has 367.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>readingdistricts <span class="sc">|&gt;</span> </span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">inner_join</span>(districtdiscipline)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Joining with `by = join_by(level, school_year, county, district, name)`</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    level school_year county district                                 name
+1      DI    20232024      1       18              HASTINGS PUBLIC SCHOOLS
+2      DI    20232024      1       90         ADAMS CENTRAL PUBLIC SCHOOLS
+3      DI    20232024      2      115            SUMMERLAND PUBLIC SCHOOLS
+4      DI    20232024      7        6              ALLIANCE PUBLIC SCHOOLS
+5      DI    20232024     10        7               KEARNEY PUBLIC SCHOOLS
+6      DI    20232024     11        1        TEKAMAH-HERMAN COMMUNITY SCHS
+7      DI    20232024     11       14         OAKLAND CRAIG PUBLIC SCHOOLS
+8      DI    20232024     11       20         LYONS-DECATUR NORTHEAST SCHS
+9      DI    20232024     12       56            DAVID CITY PUBLIC SCHOOLS
+10     DI    20232024     13        1        PLATTSMOUTH COMMUNITY SCHOOLS
+11     DI    20232024     13       32            LOUISVILLE PUBLIC SCHOOLS
+12     DI    20232024     15       10                 CHASE COUNTY SCHOOLS
+13     DI    20232024     16        6          VALENTINE COMMUNITY SCHOOLS
+14     DI    20232024     17        1                SIDNEY PUBLIC SCHOOLS
+15     DI    20232024     19      123           SCHUYLER COMMUNITY SCHOOLS
+16     DI    20232024     20        1            WEST POINT PUBLIC SCHOOLS
+17     DI    20232024     21       25            BROKEN BOW PUBLIC SCHOOLS
+18     DI    20232024     22       11         SO SIOUX CITY COMMUNITY SCHS
+19     DI    20232024     22       31              HOMER COMMUNITY SCHOOLS
+20     DI    20232024     23        2               CHADRON PUBLIC SCHOOLS
+21     DI    20232024     24        1             LEXINGTON PUBLIC SCHOOLS
+22     DI    20232024     24       11              COZAD COMMUNITY SCHOOLS
+23     DI    20232024     24       20            GOTHENBURG PUBLIC SCHOOLS
+24     DI    20232024     27        1               FREMONT PUBLIC SCHOOLS
+25     DI    20232024     27      594            LOGAN VIEW PUBLIC SCHOOLS
+26     DI    20232024     27      595       NORTH BEND CENTRAL PUBLIC SCHS
+27     DI    20232024     28        1                 OMAHA PUBLIC SCHOOLS
+28     DI    20232024     28       10               ELKHORN PUBLIC SCHOOLS
+29     DI    20232024     28       15       DOUGLAS CO WEST COMMUNITY SCHS
+30     DI    20232024     28       17               MILLARD PUBLIC SCHOOLS
+31     DI    20232024     28       54               RALSTON PUBLIC SCHOOLS
+32     DI    20232024     28       59            BENNINGTON PUBLIC SCHOOLS
+33     DI    20232024     28       66           WESTSIDE COMMUNITY SCHOOLS
+34     DI    20232024     30       25         FILLMORE CENTRAL PUBLIC SCHS
+35     DI    20232024     34       15              BEATRICE PUBLIC SCHOOLS
+36     DI    20232024     40        2          GRAND ISLAND PUBLIC SCHOOLS
+37     DI    20232024     40       82             NORTHWEST PUBLIC SCHOOLS
+38     DI    20232024     40       83             WOOD RIVER RURAL SCHOOLS
+39     DI    20232024     41      504                AURORA PUBLIC SCHOOLS
+40     DI    20232024     45        7               O'NEILL PUBLIC SCHOOLS
+41     DI    20232024     47        1               ST PAUL PUBLIC SCHOOLS
+42     DI    20232024     48        8              FAIRBURY PUBLIC SCHOOLS
+43     DI    20232024     51        1              OGALLALA PUBLIC SCHOOLS
+44     DI    20232024     55        1               LINCOLN PUBLIC SCHOOLS
+45     DI    20232024     55      145          WAVERLY SCHOOL DISTRICT 145
+46     DI    20232024     55      160               NORRIS SCHOOL DIST 160
+47     DI    20232024     56        1          NORTH PLATTE PUBLIC SCHOOLS
+48     DI    20232024     59        1               MADISON PUBLIC SCHOOLS
+49     DI    20232024     59        2               NORFOLK PUBLIC SCHOOLS
+50     DI    20232024     61        4          CENTRAL CITY PUBLIC SCHOOLS
+51     DI    20232024     63       30            TWIN RIVER PUBLIC SCHOOLS
+52     DI    20232024     64       23         JOHNSON-BROCK PUBLIC SCHOOLS
+53     DI    20232024     64       29                AUBURN PUBLIC SCHOOLS
+54     DI    20232024     66       27        SYRACUSE-DUNBAR-AVOCA SCHOOLS
+55     DI    20232024     66      111         NEBRASKA CITY PUBLIC SCHOOLS
+56     DI    20232024     71        1              COLUMBUS PUBLIC SCHOOLS
+57     DI    20232024     71        5           LAKEVIEW COMMUNITY SCHOOLS
+58     DI    20232024     72       15       CROSS COUNTY COMMUNITY SCHOOLS
+59     DI    20232024     73       17               MC COOK PUBLIC SCHOOLS
+60     DI    20232024     74       56            FALLS CITY PUBLIC SCHOOLS
+61     DI    20232024     74       70        HUMBOLDT TABLE ROCK STEINAUER
+62     DI    20232024     76        2                 CRETE PUBLIC SCHOOLS
+63     DI    20232024     77        1              BELLEVUE PUBLIC SCHOOLS
+64     DI    20232024     77       27 PAPILLION LA VISTA COMMUNITY SCHOOLS
+65     DI    20232024     77       37                GRETNA PUBLIC SCHOOLS
+66     DI    20232024     78        1        ASHLAND-GREENWOOD PUBLIC SCHS
+67     DI    20232024     78        9                 YUTAN PUBLIC SCHOOLS
+68     DI    20232024     78       39                 WAHOO PUBLIC SCHOOLS
+69     DI    20232024     79       16                GERING PUBLIC SCHOOLS
+70     DI    20232024     79       31              MITCHELL PUBLIC SCHOOLS
+71     DI    20232024     79       32           SCOTTSBLUFF PUBLIC SCHOOLS
+72     DI    20232024     80        5               MILFORD PUBLIC SCHOOLS
+73     DI    20232024     80        9                SEWARD PUBLIC SCHOOLS
+74     DI    20232024     81       10         GORDON-RUSHVILLE PUBLIC SCHS
+75     DI    20232024     89        1              BLAIR COMMUNITY SCHOOLS
+76     DI    20232024     90       17              WAYNE COMMUNITY SCHOOLS
+77     DI    20232024     93       12                  YORK PUBLIC SCHOOLS
+78     DI    20222023      1       18              HASTINGS PUBLIC SCHOOLS
+79     DI    20222023      1       90         ADAMS CENTRAL PUBLIC SCHOOLS
+80     DI    20222023      7        6              ALLIANCE PUBLIC SCHOOLS
+81     DI    20222023     10        2                GIBBON PUBLIC SCHOOLS
+82     DI    20222023     10        7               KEARNEY PUBLIC SCHOOLS
+83     DI    20222023     10       69               RAVENNA PUBLIC SCHOOLS
+84     DI    20222023     10      105            PLEASANTON PUBLIC SCHOOLS
+85     DI    20222023     11       20         LYONS-DECATUR NORTHEAST SCHS
+86     DI    20222023     12       56            DAVID CITY PUBLIC SCHOOLS
+87     DI    20222023     13        1        PLATTSMOUTH COMMUNITY SCHOOLS
+88     DI    20222023     13       32            LOUISVILLE PUBLIC SCHOOLS
+89     DI    20222023     14       54      LAUREL-CONCORD-COLERIDGE SCHOOL
+90     DI    20222023     15       10                 CHASE COUNTY SCHOOLS
+91     DI    20222023     16        6          VALENTINE COMMUNITY SCHOOLS
+92     DI    20222023     17        1                SIDNEY PUBLIC SCHOOLS
+93     DI    20222023     18        2                SUTTON PUBLIC SCHOOLS
+94     DI    20222023     19      123           SCHUYLER COMMUNITY SCHOOLS
+95     DI    20222023     20        1            WEST POINT PUBLIC SCHOOLS
+96     DI    20222023     20       30         WISNER-PILGER PUBLIC SCHOOLS
+97     DI    20222023     21       25            BROKEN BOW PUBLIC SCHOOLS
+98     DI    20222023     23        2               CHADRON PUBLIC SCHOOLS
+99     DI    20222023     24        1             LEXINGTON PUBLIC SCHOOLS
+100    DI    20222023     24       11              COZAD COMMUNITY SCHOOLS
+101    DI    20222023     24       20            GOTHENBURG PUBLIC SCHOOLS
+102    DI    20222023     27        1               FREMONT PUBLIC SCHOOLS
+103    DI    20222023     27      594            LOGAN VIEW PUBLIC SCHOOLS
+104    DI    20222023     27      595       NORTH BEND CENTRAL PUBLIC SCHS
+105    DI    20222023     28        1                 OMAHA PUBLIC SCHOOLS
+106    DI    20222023     28       10               ELKHORN PUBLIC SCHOOLS
+107    DI    20222023     28       15       DOUGLAS CO WEST COMMUNITY SCHS
+108    DI    20222023     28       17               MILLARD PUBLIC SCHOOLS
+109    DI    20222023     28       54               RALSTON PUBLIC SCHOOLS
+110    DI    20222023     28       59            BENNINGTON PUBLIC SCHOOLS
+111    DI    20222023     28       66           WESTSIDE COMMUNITY SCHOOLS
+112    DI    20222023     30       25         FILLMORE CENTRAL PUBLIC SCHS
+113    DI    20222023     31      506              FRANKLIN PUBLIC SCHOOLS
+114    DI    20222023     34       15              BEATRICE PUBLIC SCHOOLS
+115    DI    20222023     40        2          GRAND ISLAND PUBLIC SCHOOLS
+116    DI    20222023     40       82             NORTHWEST PUBLIC SCHOOLS
+117    DI    20222023     41      504                AURORA PUBLIC SCHOOLS
+118    DI    20222023     45        7               O'NEILL PUBLIC SCHOOLS
+119    DI    20222023     47        1               ST PAUL PUBLIC SCHOOLS
+120    DI    20222023     47      100               CENTURA PUBLIC SCHOOLS
+121    DI    20222023     48        8              FAIRBURY PUBLIC SCHOOLS
+122    DI    20222023     55        1               LINCOLN PUBLIC SCHOOLS
+123    DI    20222023     55      145          WAVERLY SCHOOL DISTRICT 145
+124    DI    20222023     55      160               NORRIS SCHOOL DIST 160
+125    DI    20222023     56        1          NORTH PLATTE PUBLIC SCHOOLS
+126    DI    20222023     56       37               HERSHEY PUBLIC SCHOOLS
+127    DI    20222023     56       55            SUTHERLAND PUBLIC SCHOOLS
+128    DI    20222023     59        2               NORFOLK PUBLIC SCHOOLS
+129    DI    20222023     61        4          CENTRAL CITY PUBLIC SCHOOLS
+130    DI    20222023     62       63            BRIDGEPORT PUBLIC SCHOOLS
+131    DI    20222023     63       30            TWIN RIVER PUBLIC SCHOOLS
+132    DI    20222023     64       23         JOHNSON-BROCK PUBLIC SCHOOLS
+133    DI    20222023     64       29                AUBURN PUBLIC SCHOOLS
+134    DI    20222023     65     2005     SOUTH CENTRAL NEBRASKA UNIFIED 5
+135    DI    20222023     66       27        SYRACUSE-DUNBAR-AVOCA SCHOOLS
+136    DI    20222023     66      111         NEBRASKA CITY PUBLIC SCHOOLS
+137    DI    20222023     68       20               PERKINS COUNTY SCHOOLS
+138    DI    20222023     69       44              HOLDREGE PUBLIC SCHOOLS
+139    DI    20222023     70        2                PIERCE PUBLIC SCHOOLS
+140    DI    20222023     70        5             PLAINVIEW PUBLIC SCHOOLS
+141    DI    20222023     71        1              COLUMBUS PUBLIC SCHOOLS
+142    DI    20222023     71        5           LAKEVIEW COMMUNITY SCHOOLS
+143    DI    20222023     74       56            FALLS CITY PUBLIC SCHOOLS
+144    DI    20222023     76        2                 CRETE PUBLIC SCHOOLS
+145    DI    20222023     77        1              BELLEVUE PUBLIC SCHOOLS
+146    DI    20222023     77       27 PAPILLION LA VISTA COMMUNITY SCHOOLS
+147    DI    20222023     77       37                GRETNA PUBLIC SCHOOLS
+148    DI    20222023     78        1        ASHLAND-GREENWOOD PUBLIC SCHS
+149    DI    20222023     78       39                 WAHOO PUBLIC SCHOOLS
+150    DI    20222023     79       16                GERING PUBLIC SCHOOLS
+151    DI    20222023     79       31              MITCHELL PUBLIC SCHOOLS
+152    DI    20222023     79       32           SCOTTSBLUFF PUBLIC SCHOOLS
+153    DI    20222023     80        5               MILFORD PUBLIC SCHOOLS
+154    DI    20222023     80        9                SEWARD PUBLIC SCHOOLS
+155    DI    20222023     80      567            CENTENNIAL PUBLIC SCHOOLS
+156    DI    20222023     84        3            STANTON COMMUNITY SCHOOLS
+157    DI    20222023     89        1              BLAIR COMMUNITY SCHOOLS
+158    DI    20222023     89        3          FORT CALHOUN COMMUNITY SCHS
+159    DI    20222023     89       24             ARLINGTON PUBLIC SCHOOLS
+160    DI    20222023     90       17              WAYNE COMMUNITY SCHOOLS
+161    DI    20222023     93       12                  YORK PUBLIC SCHOOLS
+                  subject grade average_scale_score
+1   English Language Arts     8             2546.63
+2   English Language Arts     8             2570.43
+3   English Language Arts     8             2545.83
+4   English Language Arts     8             2550.77
+5   English Language Arts     8             2565.11
+6   English Language Arts     8             2570.97
+7   English Language Arts     8             2571.35
+8   English Language Arts     8             2586.27
+9   English Language Arts     8             2569.28
+10  English Language Arts     8             2538.23
+11  English Language Arts     8             2554.65
+12  English Language Arts     8             2546.92
+13  English Language Arts     8             2582.98
+14  English Language Arts     8             2564.67
+15  English Language Arts     8             2524.35
+16  English Language Arts     8             2579.63
+17  English Language Arts     8             2526.66
+18  English Language Arts     8             2529.62
+19  English Language Arts     8             2566.05
+20  English Language Arts     8             2558.95
+21  English Language Arts     8             2518.52
+22  English Language Arts     8              2554.1
+23  English Language Arts     8             2546.67
+24  English Language Arts     8              2525.6
+25  English Language Arts     8             2562.85
+26  English Language Arts     8             2575.39
+27  English Language Arts     8             2493.29
+28  English Language Arts     8             2604.17
+29  English Language Arts     8             2546.78
+30  English Language Arts     8             2570.23
+31  English Language Arts     8             2539.87
+32  English Language Arts     8              2603.8
+33  English Language Arts     8             2561.21
+34  English Language Arts     8              2559.1
+35  English Language Arts     8             2544.66
+36  English Language Arts     8             2519.34
+37  English Language Arts     8             2568.95
+38  English Language Arts     8             2561.95
+39  English Language Arts     8              2564.4
+40  English Language Arts     8              2569.3
+41  English Language Arts     8             2554.94
+42  English Language Arts     8             2549.25
+43  English Language Arts     8             2533.36
+44  English Language Arts     8             2547.79
+45  English Language Arts     8             2565.97
+46  English Language Arts     8             2571.65
+47  English Language Arts     8             2522.89
+48  English Language Arts     8              2544.5
+49  English Language Arts     8             2536.04
+50  English Language Arts     8             2555.24
+51  English Language Arts     8             2533.83
+52  English Language Arts     8             2604.61
+53  English Language Arts     8             2560.06
+54  English Language Arts     8             2594.45
+55  English Language Arts     8             2532.88
+56  English Language Arts     8             2498.74
+57  English Language Arts     8             2531.59
+58  English Language Arts     8              2561.1
+59  English Language Arts     8             2564.51
+60  English Language Arts     8             2545.46
+61  English Language Arts     8             2561.72
+62  English Language Arts     8             2547.46
+63  English Language Arts     8             2559.07
+64  English Language Arts     8             2570.07
+65  English Language Arts     8             2582.89
+66  English Language Arts     8             2573.52
+67  English Language Arts     8             2561.96
+68  English Language Arts     8             2578.12
+69  English Language Arts     8             2511.24
+70  English Language Arts     8             2580.58
+71  English Language Arts     8             2528.31
+72  English Language Arts     8             2561.77
+73  English Language Arts     8             2571.96
+74  English Language Arts     8             2537.97
+75  English Language Arts     8             2583.21
+76  English Language Arts     8             2546.95
+77  English Language Arts     8             2555.92
+78  English Language Arts     8             2544.78
+79  English Language Arts     8             2543.85
+80  English Language Arts     8             2521.88
+81  English Language Arts     8             2527.22
+82  English Language Arts     8             2564.04
+83  English Language Arts     8                2556
+84  English Language Arts     8             2562.26
+85  English Language Arts     8             2557.19
+86  English Language Arts     8             2573.36
+87  English Language Arts     8             2545.59
+88  English Language Arts     8             2573.82
+89  English Language Arts     8              2564.1
+90  English Language Arts     8             2551.89
+91  English Language Arts     8             2577.82
+92  English Language Arts     8             2561.66
+93  English Language Arts     8             2548.85
+94  English Language Arts     8             2527.45
+95  English Language Arts     8              2555.5
+96  English Language Arts     8              2562.1
+97  English Language Arts     8             2546.69
+98  English Language Arts     8             2583.92
+99  English Language Arts     8             2526.12
+100 English Language Arts     8             2506.32
+101 English Language Arts     8             2550.29
+102 English Language Arts     8             2516.34
+103 English Language Arts     8             2551.46
+104 English Language Arts     8             2572.54
+105 English Language Arts     8             2498.87
+106 English Language Arts     8             2595.39
+107 English Language Arts     8             2532.63
+108 English Language Arts     8             2561.03
+109 English Language Arts     8             2529.53
+110 English Language Arts     8             2588.44
+111 English Language Arts     8             2549.75
+112 English Language Arts     8             2562.31
+113 English Language Arts     8             2570.71
+114 English Language Arts     8             2547.84
+115 English Language Arts     8             2521.02
+116 English Language Arts     8             2581.17
+117 English Language Arts     8             2573.83
+118 English Language Arts     8             2547.62
+119 English Language Arts     8             2526.24
+120 English Language Arts     8             2566.46
+121 English Language Arts     8             2544.58
+122 English Language Arts     8             2546.05
+123 English Language Arts     8             2579.33
+124 English Language Arts     8             2572.51
+125 English Language Arts     8             2528.49
+126 English Language Arts     8             2560.74
+127 English Language Arts     8             2565.13
+128 English Language Arts     8             2539.77
+129 English Language Arts     8             2552.29
+130 English Language Arts     8             2587.34
+131 English Language Arts     8             2541.03
+132 English Language Arts     8             2601.48
+133 English Language Arts     8             2574.21
+134 English Language Arts     8             2536.24
+135 English Language Arts     8             2565.23
+136 English Language Arts     8             2512.33
+137 English Language Arts     8             2563.48
+138 English Language Arts     8             2563.29
+139 English Language Arts     8              2565.2
+140 English Language Arts     8              2558.5
+141 English Language Arts     8             2512.89
+142 English Language Arts     8             2542.14
+143 English Language Arts     8                2557
+144 English Language Arts     8             2558.43
+145 English Language Arts     8             2565.44
+146 English Language Arts     8             2566.68
+147 English Language Arts     8             2562.77
+148 English Language Arts     8             2540.16
+149 English Language Arts     8             2561.47
+150 English Language Arts     8             2524.86
+151 English Language Arts     8             2576.88
+152 English Language Arts     8             2534.83
+153 English Language Arts     8             2564.86
+154 English Language Arts     8             2576.47
+155 English Language Arts     8             2547.59
+156 English Language Arts     8             2575.73
+157 English Language Arts     8              2574.3
+158 English Language Arts     8             2556.91
+159 English Language Arts     8             2563.16
+160 English Language Arts     8             2550.57
+161 English Language Arts     8             2552.36
+    total_student_population_count students_disciplined_count
+1                             3740                        386
+2                             1029                         29
+3                              438                         11
+4                             1355                        122
+5                             6064                        494
+6                              518                         22
+7                              405                         12
+8                              305                         15
+9                              694                         57
+10                            1459                        116
+11                             689                         23
+12                             634                         51
+13                             611                         31
+14                            1222                         86
+15                            1965                         34
+16                             722                         41
+17                             886                         29
+18                            3801                        302
+19                             444                         14
+20                             971                         46
+21                            3229                        188
+22                             967                         49
+23                             829                         41
+24                            5333                        564
+25                             609                         17
+26                             591                         14
+27                           51693                       7095
+28                           11455                        308
+29                            1116                         40
+30                           23300                       1478
+31                            3409                        341
+32                            4285                        136
+33                            6319                        505
+34                             614                         20
+35                            2119                        187
+36                           10070                        701
+37                            1423                         78
+38                             490                         46
+39                            1227                         33
+40                             826                         21
+41                             668                         19
+42                             908                         59
+43                             821                         46
+44                           41654                       3415
+45                            2134                         54
+46                            2409                         54
+47                            3756                        413
+48                             555                         23
+49                            4541                        524
+50                             781                         18
+51                             402                         72
+52                             359                         13
+53                             980                         32
+54                             784                         13
+55                            1402                        109
+56                            4145                        401
+57                             964                         22
+58                             380                         14
+59                            1386                         36
+60                             902                         33
+61                             298                         30
+62                            2268                        115
+63                            9444                        787
+64                           12039                        799
+65                            6788                        201
+66                            1102                         26
+67                             500                         16
+68                            1088                         72
+69                            2020                        118
+70                             604                         21
+71                            3445                        184
+72                             803                         34
+73                            1471                         44
+74                             534                         41
+75                            2212                        129
+76                            1009                         42
+77                            1581                         63
+78                            3644                        107
+79                            1004                         33
+80                            1345                        172
+81                             554                         49
+82                            6152                        449
+83                             413                         10
+84                             304                         18
+85                             274                         12
+86                             676                         33
+87                            1504                        149
+88                             702                         10
+89                             415                         12
+90                             625                         21
+91                             623                         12
+92                            1276                         69
+93                             420                         23
+94                            1984                         58
+95                             728                         41
+96                             437                         14
+97                             890                         26
+98                             941                         49
+99                            3221                        196
+100                            949                         44
+101                            847                         18
+102                           5217                        434
+103                            590                         31
+104                            586                         10
+105                          51754                       7738
+106                          11319                        204
+107                           1053                         66
+108                          23637                       1620
+109                           3352                        392
+110                           4154                        185
+111                           6271                        531
+112                            609                         13
+113                            290                         13
+114                           2090                        219
+115                           9990                        797
+116                           1465                         75
+117                           1226                         33
+118                            829                         28
+119                            705                         41
+120                            481                         14
+121                            909                         40
+122                          41850                       3823
+123                           2165                         59
+124                           2483                         76
+125                           3782                        473
+126                            557                         37
+127                            305                         27
+128                           4518                        517
+129                            767                         32
+130                            506                         17
+131                            409                         47
+132                            363                         14
+133                           1051                         25
+134                            714                         35
+135                            793                         23
+136                           1428                         82
+137                            419                         28
+138                           1014                         13
+139                            690                         31
+140                            346                         10
+141                           4111                        374
+142                            952                         37
+143                            880                         35
+144                           2230                        137
+145                           9498                        918
+146                          12031                        796
+147                           6529                        224
+148                           1099                         29
+149                           1085                         71
+150                           2023                         42
+151                            620                         28
+152                           3519                        168
+153                            819                         26
+154                           1496                         58
+155                            496                         14
+156                            383                         14
+157                           2274                        122
+158                            825                         16
+159                            691                         22
+160                            997                         50
+161                           1620                         76</code></pre>
+</div>
+</div>
+<p>We are left with 161 rows. This means that all observations that were left out did not match the data in readingdistricts.</p>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
